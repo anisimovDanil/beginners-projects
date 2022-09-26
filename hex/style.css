@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.app {
+  transition: 500ms;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+.description{
+  width: 65%;
+  text-transform: uppercase;
+  margin-bottom: 5em;
+  animation: changecolor 5s infinite alternate;
+}
+.color-name {
+  font-size: 2em;
+}
+.submit {
+	font-family: Verdana;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 3px solid #3866a3;
+	padding: 10px 17px;
+	background-color: #3b96db;
+	text-shadow: 1px 1px 1px #528ecc;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+}
+.submit:hover {
+  border: 3px solid #53A338;
+}
+.color-name {
+  margin-bottom: 10px;
+}
+
+
+@keyframes changecolor {
+  0% {
+    color: darkorange;
+  }
+  20% {
+    color: indigo;
+  }
+  40% {
+    color: green;
+  }
+  80% {
+    color: red;
+  }
+  100% {
+    color: lime;
+  }
+}
