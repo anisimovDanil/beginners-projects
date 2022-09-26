@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Slider</title>
+</head>
+<body>
+  <div class="slider">
+    <div class="container">
+
+      <!-- этот кусок надо перекинуть в js, чтобы фабрично это создавать и выводить-->
+      <div class="wrapper">
+        <div class="image fade">
+          <img src="img/mountains.jpg" alt="picture"/>    
+        </div>
+        <div class="image fade">
+          <img src="img/car.jpg" alt="picture"/>
+        </div>
+        <div class="image fade">
+          <img src="img/car.jpg" alt="picture"/>
+        </div>
+
+
+        <i id="prev" class="fas fa-chevron-left"></i>
+        <i id="next" class="fas fa-chevron-right"></i>
+      </div>
+
+      <!-- от количества фото - количнсьво точке, все в js-->
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
