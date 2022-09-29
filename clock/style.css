@@ -1,0 +1,49 @@
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('fonts/digital-7 (mono).ttf');
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: none;
+}
+.clock {
+  display: flex;
+  justify-content: center;  
+  height: 100vh;
+  align-items: center;
+}
+.clock h1 { 
+  font-family:'digital-clock-font', arial;
+  font-size: calc(70px + (30 + 30 * 0.7) * ((100vw - 480px) / 1280));
+}
+.day,
+.seconds {
+  margin-right: 10px;
+}
+.hour::after,
+.minutes::after
+ {
+  content: ":";
+  margin: 0 10px;
+}
+
+@media (max-width: 481px) {
+  .clock {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .clock h1 {
+    margin: 0;
+    font-size: 60px;
+  }
+  .hour,
+  .minutes {
+    border-bottom: 2px solid black;
+  }
+  .hour::after,
+  .minutes::after {
+    content: "";
+    margin: 0;
+  }
+}
