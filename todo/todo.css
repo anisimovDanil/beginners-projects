@@ -3,6 +3,7 @@ body {
     color: #757575;
     font-family: 'Consolas', Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #2F2D2D;
 }
 
 ul {
@@ -132,13 +133,14 @@ header h1 {
     margin-right: auto;
 }
 
-.todo-item.completed .title {
+.todo-item .title.completed {
     text-decoration: line-through;
 }
 
 .todo-item.editing .title {
     display: none;
 }
+
 
 .todo-item .textfield {
     display: none;
